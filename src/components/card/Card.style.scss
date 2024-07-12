@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  cursor: pointer;
+
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__wrapper {
+    bottom: 20px;
+    left: 10px;
+    position: absolute;
+    padding: 5px 10px;
+
+    background: #fff;
+    border-radius: 20px;
+    &__name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .card:hover {
+    transform: scale(1);
+  }
+
+  .card {
+    &__img {
+      width: 300px;
+      height: auto;
+    }
+  }
+}

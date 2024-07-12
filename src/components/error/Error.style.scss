@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  &__error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+      font-size: 40px;
+      color: red;
+      font-weight: bold;
+    }
+    &__button {
+      margin-top: 20px;
+    }
+  }
+}
